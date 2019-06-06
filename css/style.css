@@ -1,0 +1,185 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* einde css reset */
+
+
+body{
+    font-family: arial, helvetica, sans-serif;
+    font-size: 1.2em;
+}
+.section{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+#yellow{
+    color:gold;
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20pt;
+    color: rgb(71, 32, 212);
+    margin: 50px auto 0 15%;
+    text-shadow: 6px 6px 1px gold;
+}
+h2{
+    width: 400px;
+    font-family: Cambria, Cochin, Times, 'Times New Roman', serif;
+    font-size: 16pt;
+    color: black;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.section #ani1{
+    height: 480px;
+    width: 450px;
+    background: url("https://media.giphy.com/media/VA67KNnS1XtZe/giphy.gif");
+    margin: 0 auto;
+    display: none;
+}
+.section #vbVideo{
+    height: 450px;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.section .slide #ani2{
+    height: 300px;
+    width: 300px;
+    background-color: gold;
+    margin: 0 auto;
+
+}
+.startAnimate{
+    padding: 80px;
+    transition: ease 1200ms;
+}
+#coffeetime{
+    height: 500px;
+    width: 500px;
+    background: url("https://media.giphy.com/media/1etQnLwa9EpdD4wTct/giphy.gif");
+    margin: 0 auto;
+}
+#coffeetime h2{
+    text-align: center;
+    color: black;
+}
+.map {
+    height: 500px;
+    width: 80vw;
+    margin: 50px auto auto 10%;
+}
+.blok{
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+#blok1{
+    width: 30%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: dimgrey;
+    transition: ease 2000ms;
+    position: relative;
+}
+#blok2{
+    width: 70%;
+    height: 70%;
+    background-color: grey;
+}
+#blok3{
+    width: 70%;
+    height: 30%;
+    background-color: slategrey;
+}
+.blok a{
+    display: block;
+    text-decoration: none;
+    bottom: 20px;
+    right: 20px;
+    position: absolute;
+    color:lightgreen;
+    transition: all ease 2000ms;
+    z-index: 100;
+    position: absolute;
+}
+.blok a:after{
+    position: absolute;
+    left: 20px;
+}
+#blok1.active{
+    width: 100%;
+}
+#blok1.active a{
+    right: calc(100% - 80px);
+    transition: all ease 2000ms;
+}
+#content .enter{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#content h2{
+    color: hotpink;
+    font-size: 3em;
+    text-align: center;
+}
+#content{
+    color: white;
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    margin-top: 25%;
+    margin-left: 25%;
+    transform: translate(0, -50%);
+ 
+}
